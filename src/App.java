@@ -13,6 +13,10 @@ public class App {
         threadAssinaturas2.start();
         threadAutores.start();
 
+        System.out.println("Id da thread Assinaturas1: " + threadAssinaturas1.getId());
+        System.out.println("Id da thread Assinaturas: " + threadAssinaturas2.getId());
+        System.out.println("Id da thread Autores: " + threadAutores.getId());
+
         System.out.println("As threads vão executar em paralelo" +
                 "\na JVM decide quando executar qual delas" +
                 "\n podendo ter que 'voltar'" +
